@@ -24,6 +24,8 @@ Todos os materiais estão disponíveis em:
 
 **[saudinob.github.io/fp2526-tp3](https://saudinob.github.io/fp2526-tp3)**
 
+Repositório com o material: **[https://github.com/SauDInoB/fp2526-tp3](https://github.com/SauDInoB/fp2526-tp3)**
+
 ---
 
 ## Agenda
