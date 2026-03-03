@@ -1,0 +1,685 @@
+---
+title: "Processamento de Texto Avançado"
+subtitle: "TP3 · Protocolo de Ensaio Clínico"
+date: "3 de Março de 2026"
+format:
+  revealjs:
+    theme: simple
+    css: custom.css
+    slide-number: true
+    chalkboard: false
+    transition: none
+    transition-speed: default
+    center: true
+    highlight-style: github
+    code-line-numbers: true
+    footer: "Ferramentas de Produtividade · MIM · FMUP"
+---
+
+# Bem-vindos {background-color="#2C3E50"}
+
+## Agenda
+
+::: {.incremental}
+1. Markdown avançado — tabelas e estrutura
+2. Protocolo SPIRIT — secções de hoje
+3. Cenários e grupos — atribuição
+4. Usar IA no protocolo — workflow e revisão crítica
+5. Trabalho prático — 35 min de redação
+6. Conversão com Pandoc
+7. Formatação profissional em Word
+8. Referências bibliográficas — introdução conceptual
+:::
+
+---
+
+## Workflow de Hoje
+
+```
+  IA + Markdown (.md)
+         │
+         ▼
+       Pandoc
+         │
+         ▼
+      Word (.docx)
+         │
+         ▼
+   Formatação final
+```
+
+::: {.notes}
+O elemento novo em relação a sessões anteriores é a IA como ferramenta de redação inicial. O Markdown continua a ser a fonte de verdade; a IA ajuda a gerar rascunhos que depois são revistos criticamente.
+:::
+
+---
+
+## Organização de Ficheiros
+
+Cada grupo cria **uma pasta** no seu computador:
+
+```
+TP3-GrupoX/
+├── protocolo-v1.md      ← fonte Markdown (escrevem aqui)
+└── protocolo-v1.docx    ← output Word (gerado pelo Pandoc)
+```
+
+. . .
+
+- Substituir `X` pelo número do grupo (ex: `TP3-G1`)
+- Guardar na Área de Trabalho ou em OneDrive
+- O ficheiro `.md` é o documento de trabalho — o `.docx` é gerado
+
+::: {.notes}
+Estrutura simples de propósito. Não usar nomes como "versão final" ou "definitivo" — usar numeração (v1, v2) para poder rastrear evolução.
+:::
+
+---
+
+# Cenários e Grupos {background-color="#2C3E50"}
+
+## Atribuição de Cenários
+
+| Cenário | T_A | T_B | T_C |
+|---------|-----|-----|-----|
+| **RespiRA** | G_1 | G_4 | G_7 |
+| **MindMove** | G_2 | G_5 | G_8 |
+| **GlucoCheck** | G_3 | G_6 | G_9 |
+
+---
+
+## Grupos — T_A
+
+| Grupo | Elementos |
+|-------|-----------|
+| **G_1** · RespiRA | Matilde Ascensão, Clara Figueiras, Beatriz Martins, Rita Torres |
+| **G_2** · MindMove | Gabriela Carneiro, Maria Leonor Fernandes, Ana Sofia Moreira, Flávio Vieira |
+| **G_3** · GlucoCheck | José Ferreira, Diana Lopes, Rodrigo Oliveira, Tomás Santos |
+
+---
+
+## Grupos — T_B
+
+| Grupo | Elementos |
+|-------|-----------|
+| **G_4** · RespiRA | João Paulo Cardoso, Gonçalo Cunha, Tiago Ferreira, Tiago Sousa |
+| **G_5** · MindMove | Inês Assunção, Inês Formoso, Maria João Roldão, Maria João Roso |
+| **G_6** · GlucoCheck | Rosarinho Barros, Mariana Dias, Luísa Moreira |
+
+---
+
+## Grupos — T_C
+
+| Grupo | Elementos |
+|-------|-----------|
+| **G_7** · RespiRA | Rafael Batista, Mafalda Correia, Rodrigo Silva, Joana Teixeira |
+| **G_8** · MindMove | Joana Antunes, Carlota Ferreira, Duarte Oliveira, Afonso Santos |
+| **G_9** · GlucoCheck | João Francisco Dantas, Margarida Machado, Maria Clara Soares |
+
+::: {.notes}
+Confirmar em voz alta cada grupo com o cenário. Dar 1 minuto para os grupos se reunirem e confirmarem que têm o ficheiro `cenarios.md` disponível no repositório.
+:::
+
+---
+
+# Markdown Avançado {background-color="#2C3E50"}
+
+---
+
+## Revisão Rápida
+
+```markdown
+# Título Nível 1
+## Título Nível 2
+### Título Nível 3
+
+**negrito**   *itálico*
+
+- Item de lista
+- Outro item
+
+1. Item numerado
+2. Outro item
+```
+
+. . .
+
+> Se já dominam o básico, o importante hoje são as **tabelas**.
+
+::: {.notes}
+Não demorar aqui — quem precisar de revisão pode consultar o `guia-tp3-estudante.md` disponível no repositório. O foco desta parte é mesmo as tabelas.
+:::
+
+---
+
+## Tabelas em Markdown
+
+```markdown
+| Critério | Inclusão     | Exclusão     |
+|----------|--------------|--------------|
+| Idade    | 18–65 anos   | < 18, > 65   |
+| HbA1c    | 7,0–9,5 %    | < 7,0, > 9,5 |
+| IMC      | 25–35 kg/m²  | > 35 kg/m²   |
+```
+
+. . .
+
+**Regras essenciais:**
+
+- Separador de cabeçalho obrigatório: `|---|---|`
+- Espaçamento dentro das células não precisa ser perfeito
+- Resultado: tabela formatada automaticamente no Word
+
+::: {.callout-tip}
+## Demo ao vivo
+Criar tabela de critérios de inclusão/exclusão para o cenário RespiRA.
+:::
+
+::: {.notes}
+Criar a tabela ao vivo, intencionalmente com espaçamento irregular, para mostrar que o Markdown é tolerante. Mostrar como fica renderizada no dillinger.io ou no preview do editor.
+:::
+
+---
+
+## Template Markdown
+
+O ficheiro `protocolo-template.md` já tem:
+
+- Estrutura completa SPIRIT
+- Cabeçalhos para todas as secções
+- Tabelas de exemplo
+- Comentários `<!-- -->` com orientações em cada secção
+- Metadados YAML pré-configurados
+
+. . .
+
+```markdown
+---
+title: "[Nome do Cenário]: Ensaio Clínico Randomizado"
+author: "Grupo X — Turma Y"
+date: "2026-03-03"
+---
+```
+
+::: {.notes}
+Abrir o ficheiro no ecrã e navegar pelas secções rapidamente — não ler, apenas mostrar a estrutura e os comentários. "Está tudo aqui, sigam os comentários."
+:::
+
+---
+
+# Protocolo SPIRIT {background-color="#2C3E50"}
+
+---
+
+## Estrutura SPIRIT Completa
+
+1. Título e Informação Administrativa
+2. Introdução (Racional e Objectivos)
+3. Métodos: Desenho do Estudo
+4. Métodos: Participantes
+5. Métodos: Intervenções
+6. Métodos: Outcomes
+7. Métodos: Análise Estatística
+8. Ética e Disseminação
+
+. . .
+
+**Hoje:** Secções 1 a 5
+
+---
+
+## O Que Vão Escrever Hoje
+
+| Secção | Palavras | Conteúdo |
+|--------|----------|----------|
+| Título | 50–100 | Título descritivo, autores, afiliações |
+| Racional | 300–400 | Problema, evidência, gap, justificação |
+| Objectivos | 100–150 | Primário e secundários |
+| Desenho | 150–200 | RCT paralelo, ratio, duração, setting |
+| População | 200–300 | Critérios inclusão/exclusão detalhados |
+| Intervenções | 300–400 | Descrição intervenção + comparador |
+
+**Total:** ~1200–1500 palavras, distribuídas pelo grupo.
+
+::: {.notes}
+Ir devagar neste slide — tem muita informação. Explicar cada secção brevemente. Tranquilizar: distribuídas por 4 pessoas são ~300 palavras cada, o equivalente a um parágrafo desenvolvido.
+:::
+
+---
+
+## Divisão de Tarefas Sugerida
+
+| Pessoa | Secções | Palavras | Tempo |
+|--------|---------|----------|-------|
+| 1 | Título + Racional | ~400 | 25 min |
+| 2 | Objectivos + Desenho | ~300 | 20 min |
+| 3 | População | ~250 | 20 min |
+| 4 | Intervenções | ~350 | 25 min |
+
+. . .
+
+Depois: **uma pessoa compila** tudo num ficheiro único (5–10 min).
+
+---
+
+## Exemplo: Critério de Elegibilidade
+
+```markdown
+### 2.2.1 Critérios de Inclusão
+
+Serão elegíveis para participação:
+
+1. Idade entre 18 e 65 anos
+2. Diagnóstico de asma moderada persistente (GINA)
+3. ACT score < 20 no baseline
+4. Acesso a smartphone Android (9.0+) ou iOS (14.0+)
+5. Literacia suficiente em português
+6. Consentimento informado
+```
+
+. . .
+
+::: {.callout-tip}
+## Critério de ouro
+Cada critério deve ser **verificável objectivamente.**
+
+❌ "Adultos com asma" → ✅ "18–65 anos, asma moderada segundo GINA"
+:::
+
+---
+
+# Usar IA no Protocolo {background-color="#2C3E50"}
+
+---
+
+## Porquê Usar IA?
+
+A IA é útil para:
+
+::: {.incremental}
+- Gerar um **rascunho inicial** de uma secção a partir das vossas ideias
+- Sugerir estrutura de frases e formulações técnicas
+- Expandir pontos que escreveram em lista para texto corrido
+- Identificar inconsistências ou lacunas no que escreveram
+:::
+
+. . .
+
+A IA **não substitui:**
+
+::: {.incremental}
+- O vosso conhecimento do cenário
+- A verificação de factos e números
+- A consistência com a questão PICO
+- O julgamento clínico e metodológico
+:::
+
+::: {.notes}
+Este ponto é importante: a IA é um acelerador de redação, não um substituto de pensamento. Um rascunho gerado por IA sem revisão crítica tem erros factuais, critérios vagos e inconsistências internas — é previsível.
+:::
+
+---
+
+## Workflow com IA
+
+```
+1. Preparem o contexto
+   → Cenário, PICO, secção a escrever, instruções do template
+
+2. Escrevam um prompt claro
+   → O que querem, em que formato, com que restrições
+
+3. Gerem o rascunho
+   → ChatGPT, Copilot, Claude, ou outro
+
+4. Revejam criticamente
+   → Factos, especificidade, consistência com PICO
+
+5. Editem e integrem
+   → Adaptem ao Markdown, corrijam, completem
+```
+
+::: {.notes}
+O passo 4 é o mais importante e o mais frequentemente saltado. É também o que mais distingue uso competente de uso ingénuo da IA.
+:::
+
+---
+
+## Exemplo de Prompt — Racional
+
+> Estou a escrever o racional de um protocolo SPIRIT para um ensaio clínico randomizado.
+>
+> **Cenário:** App móvel RespiRA para adultos com asma moderada persistente (18–65 anos).  
+> **Comparador:** Cuidado habitual isolado.  
+> **Outcome primário:** ACT score às 12 semanas.
+>
+> Escreve um racional com ~350 palavras, estruturado em 4 parágrafos:
+> 1. Magnitude da asma em Portugal e Europa (dados epidemiológicos específicos)
+> 2. Limitações do cuidado habitual (baixa adesão, controlo subóptimo)
+> 3. Evidência sobre apps móveis em asma (citar mecanismos de ação)
+> 4. Gap específico que este estudo preenche e justificação do comparador
+>
+> Usar linguagem científica formal. Não usar marcadores de lista — texto corrido.
+
+::: {.notes}
+Mostrar este prompt ao vivo e deixar a IA gerar. Depois comentar o resultado: o que está bem, o que precisaria de verificação (especialmente números epidemiológicos), o que está genérico de mais.
+:::
+
+---
+
+## Revisão Crítica — O Que Verificar
+
+Depois de gerar, verificar **sempre:**
+
+::: {.incremental}
+- **Números e estatísticas** — confirmar em fontes (PubMed, OMS, SPP)
+- **Especificidade dos critérios** — ❌ "adultos" → ✅ "18–65 anos, HbA1c 7–9,5%"
+- **Consistência com PICO** — os critérios correspondem à população definida?
+- **Descrição da intervenção** — é a vossa app, não uma app genérica
+- **Terminologia técnica** — GINA, PHQ-9, ACT, HbA1c — usada correctamente?
+- **Nada copiado sem compreender** — se não conseguem explicar, reescrevam
+:::
+
+::: {.notes}
+Um exercício útil: pedir a um colega de grupo que leia uma secção e aponte o que não entende ou parece vago. Se não conseguem defender o que está escrito, é sinal de que precisam de rever.
+:::
+
+---
+
+# Trabalho Prático {background-color="#2C3E50"}
+
+**35 minutos de redação**
+
+---
+
+## Instruções
+
+1. Criar pasta `TP3-GrupoX/` no vosso computador
+2. Copiar `protocolo-template.md` para essa pasta → renomear para `protocolo-v1.md`
+3. Dividir secções pelo grupo (tabela do slide anterior)
+4. Para cada secção:
+   a. Ler os comentários `<!-- -->` do template
+   b. Preparar contexto e escrever prompt para a IA
+   c. Gerar rascunho
+   d. Rever criticamente (verificar factos, especificidade, consistência)
+   e. Editar e integrar no ficheiro
+5. Aos 25 min: uma pessoa começa a compilar tudo num ficheiro único
+6. Guardar como `protocolo-v1.md`
+
+. . .
+
+::: {.callout-note}
+## Objectivo
+Rascunho de **todas as secções** no final — não precisa de ser perfeito.  
+Vão refinar nas próximas aulas.
+:::
+
+---
+
+# Conversão com Pandoc {background-color="#2C3E50"}
+
+---
+
+## O Que É o Pandoc?
+
+**Conversor universal de documentos**
+
+- Markdown → Word, PDF, HTML, LaTeX, ...
+- Preserva estrutura: títulos, tabelas, listas
+- Suporta metadados YAML
+- Gratuito e open source
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Online (recomendado hoje)**
+
+[pandoc.org/try](https://pandoc.org/try)
+:::
+
+::: {.column width="50%"}
+**Terminal (se instalado)**
+
+```bash
+pandoc protocolo-v1.md \
+  -o protocolo-v1.docx
+```
+:::
+
+::::
+
+::: {.notes}
+Se pandoc.org/try estiver lento ou indisponível, a alternativa é dillinger.io → Export → Word. Ter o ficheiro CardioFit já copiado para mostrar rapidamente.
+:::
+
+---
+
+## Pandoc Online — Passo a Passo
+
+1. Ir para **[pandoc.org/try](https://pandoc.org/try)**
+2. Colar o conteúdo de `protocolo-v1.md` à esquerda
+3. Seleccionar:
+   - **from:** `Markdown`
+   - **to:** `DOCX`
+4. Clicar **Convert**
+5. Download do ficheiro `.docx`
+6. Abrir no Word → guardar na pasta `TP3-GrupoX/`
+
+. . .
+
+::: {.callout-tip}
+## Demo ao vivo
+Converter o exemplo CardioFit em conjunto antes de vocês fazerem.
+:::
+
+---
+
+# Formatação Profissional {background-color="#2C3E50"}
+
+**Microsoft Word**
+
+---
+
+## Porquê Usar Estilos?
+
+:::: {.columns}
+
+::: {.column width="55%"}
+**Sem estilos:**
+
+- Formatar cada título manualmente
+- Inconsistências inevitáveis
+- Índice impossível de criar automaticamente
+- Mudança global = refazer tudo
+:::
+
+::: {.column width="45%"}
+**Com estilos:**
+
+- Consistência automática
+- Índice em 3 cliques
+- Mudança global instantânea
+- Navegação fácil no documento
+:::
+
+::::
+
+. . .
+
+**Regra:** Nunca formatar títulos manualmente. Sempre via estilos.
+
+---
+
+## Como Aplicar Estilos
+
+1. Seleccionar título principal → aplicar **"Título 1"**
+2. Seleccionar subtítulos → aplicar **"Título 2"**
+3. Subsecções → aplicar **"Título 3"**
+4. Texto normal → **"Normal"** (geralmente já está)
+
+. . .
+
+::: {.callout-note}
+## Modificar estilos
+Click direito no estilo → Modificar → alterar fonte, tamanho, cor.  
+A alteração aplica-se automaticamente a **todos** os títulos com esse estilo.
+:::
+
+. . .
+
+*[DEMONSTRAÇÃO AO VIVO]*
+
+---
+
+## Índice Automático
+
+**Pré-requisito:** Estilos aplicados primeiro.
+
+. . .
+
+**Passos:**
+
+1. Posicionar cursor onde quer o índice
+2. **Referências** → **Índice** → **Inserir Índice**
+3. Escolher formatação → OK
+
+. . .
+
+**Actualizar depois de editar:**
+
+> Click direito no índice → "Actualizar Campo" → "Actualizar índice inteiro"
+
+. . .
+
+*[DEMONSTRAÇÃO AO VIVO]*
+
+---
+
+## Checklist de Formatação
+
+Antes de terminar:
+
+- [ ] Estilos Título 1, 2, 3 aplicados consistentemente
+- [ ] Índice automático inserido e actualizado
+- [ ] Tabelas legíveis (ajustar larguras se necessário)
+- [ ] Documento guardado como `protocolo-v1.docx`
+- [ ] Cabeçalhos/rodapés *(opcional — podem fazer em casa)*
+
+---
+
+# Referências Bibliográficas {background-color="#2C3E50"}
+
+---
+
+## Porquê Gerir Referências?
+
+**O problema:**
+
+> "Jiang et al., 2023 mostrou que..." — qual Jiang? Qual artigo?
+
+. . .
+
+**A solução: citation keys**
+
+```
+@jiang2023mhealth    →  Jiang et al. (2023), mHealth...
+@who2022asthma       →  WHO (2022), Global Asthma Report
+```
+
+. . .
+
+No vosso protocolo Markdown:
+
+```markdown
+Apps móveis aumentam a adesão em 35% [@jiang2023mhealth].
+```
+
+→ Pandoc converte automaticamente para qualquer estilo (Vancouver, APA...)
+
+::: {.notes}
+Este é o conceito central: o citation key é um identificador estável que liga o texto à referência no ficheiro .bib. A IA pode sugerir referências, mas cada uma tem de ser verificada e importada para o Zotero manualmente.
+:::
+
+---
+
+## O Workflow de Referências
+
+```
+ Zotero          Better BibTeX         LaTeX / Pandoc
+(biblioteca) ──▶ (citation keys) ──▶  (documento final)
+                   exporta .bib
+```
+
+. . .
+
+- **Zotero:** gestor de referências (gratuito, open source)
+- **Better BibTeX:** plugin que gera citation keys estáveis e exporta `.bib`
+- **`.bib`:** ficheiro de texto com todas as referências
+
+::: {.notes}
+O ficheiro .bib é o elo de ligação entre o Zotero e qualquer ferramenta de escrita — Pandoc, LaTeX, Quarto. Na próxima aula vão produzir este ficheiro e usá-lo em LaTeX.
+:::
+
+---
+
+## TPC — Obrigatório Antes do TP4
+
+::: {.callout-important}
+## Instalar antes do TP4
+
+**1. Instalar Zotero**  
+[zotero.org/download](https://www.zotero.org/download/)
+
+**2. Instalar Better BibTeX**  
+a. Descarregar `.xpi` em [github.com/retorquere/zotero-better-bibtex/releases/latest](https://github.com/retorquere/zotero-better-bibtex/releases/latest)  
+*(Firefox: click direito → "Guardar link como...")*  
+b. Zotero → Tools → Plugins → engrenagem → Install Plugin From File  
+c. Seleccionar o `.xpi` → Install → Reiniciar Zotero
+
+**3. Verificar**  
+Zotero → Preferences → separador "Better BibTeX" deve existir.
+:::
+
+---
+
+## Próxima Aula — TP4
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Primeira parte (~30 min)**
+
+Zotero + Better BibTeX:
+
+- Organizar biblioteca
+- Citation keys: configurar e exportar
+- Exportar `.bib` para LaTeX
+:::
+
+::: {.column width="50%"}
+**Segunda parte**
+
+Introdução a LaTeX *(colega)*:
+
+- Usar o protocolo Markdown desta aula
+- Usar o `.bib` exportado
+- Produzir documento LaTeX
+:::
+
+::::
+
+. . .
+
+**Trazer:** `protocolo-v1.md` + Zotero e Better BibTeX instalados.
+
+---
+
+## Questões? {background-color="#2C3E50"}
+
+**tiago.jacinto@med.up.pt**
+
+. . .
+
+Materiais disponíveis em **[saudinob.github.io/fp2526-tp3](https://saudinob.github.io/fp2526-tp3)**
