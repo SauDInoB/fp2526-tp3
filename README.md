@@ -1,6 +1,6 @@
 # TP3 — Processamento de Texto Avançado
 
-**Disciplina:** Ferramentas de Produtividade · MIM · FMUP  
+**Disciplina:** Ferramentas de Produtividade · SauD InoB · FMUP  
 **Aula:** TP3 · 3 de Março de 2026
 
 ---
@@ -49,4 +49,4 @@ Guardar na pasta `TP3-GrupoX/` no computador.
 
 ---
 
-**Contacto:** tiago.jacinto@med.up.pt
+**Contacto:** tiagojacinto@med.up.pt · [tiagojct.eu](https://tiagojct.eu)

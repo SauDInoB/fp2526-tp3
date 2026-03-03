@@ -437,7 +437,7 @@ Adicionar 2–3 referências à vossa biblioteca Zotero antes do TP4. Podem impo
 - **Markdown Guide:** [markdownguide.org](https://markdownguide.org)
 - **Zotero:** [zotero.org](https://www.zotero.org)
 - **Better BibTeX:** [retorque.re/zotero-better-bibtex](https://retorque.re/zotero-better-bibtex/)
-- **Apoio:** tiago.jacinto@med.up.pt
+- **Apoio:** tiagojacinto@med.up.pt · [tiagojct.eu](https://tiagojct.eu)
 
 ---
 

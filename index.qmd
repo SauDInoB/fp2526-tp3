@@ -13,7 +13,7 @@ format:
     center: true
     highlight-style: github
     code-line-numbers: true
-    footer: "Ferramentas de Produtividade · MIM · FMUP"
+    footer: "Ferramentas de Produtividade · SauD InoB · FMUP"
 ---
 
 # Bem-vindos {background-color="#2C3E50"}
@@ -174,7 +174,7 @@ Não demorar aqui — quem precisar de revisão pode consultar o `guia-tp3-estud
 
 ::: {.callout-tip}
 ## Demo ao vivo
-Criar tabela de critérios de inclusão/exclusão para o cenário RespiRA.
+Criar tabela de critérios de inclusão/exclusão para o cenário CardioFit.
 :::
 
 ::: {.notes}
@@ -379,20 +379,20 @@ O passo 4 é o mais importante e o mais frequentemente saltado. É também o que
 
 > Estou a escrever o racional de um protocolo SPIRIT para um ensaio clínico randomizado.
 >
-> **Cenário:** App móvel RespiRA para adultos com asma moderada persistente (18–65 anos).  
-> **Comparador:** Cuidado habitual isolado.  
-> **Outcome primário:** ACT score às 12 semanas.
+> **Cenário:** App móvel CardioFit de reabilitação cardíaca para sobreviventes de enfarte agudo do miocárdio (≥ 18 anos, FEVE ≥ 40%).  
+> **Comparador:** Reabilitação cardíaca convencional isolada.  
+> **Outcome primário:** Capacidade funcional (VO₂ máx) às 12 semanas.
 >
 > Escreve um racional com ~350 palavras, estruturado em 4 parágrafos:
-> 1. Magnitude da asma em Portugal e Europa (dados epidemiológicos específicos)
-> 2. Limitações do cuidado habitual (baixa adesão, controlo subóptimo)
-> 3. Evidência sobre apps móveis em asma (citar mecanismos de ação)
+> 1. Magnitude da doença cardiovascular em Portugal e Europa (dados epidemiológicos específicos)
+> 2. Limitações da reabilitação cardíaca convencional (adesão, acessibilidade, abandono)
+> 3. Evidência sobre apps móveis em reabilitação cardíaca (citar mecanismos de ação)
 > 4. Gap específico que este estudo preenche e justificação do comparador
 >
 > Usar linguagem científica formal. Não usar marcadores de lista — texto corrido.
 
 ::: {.notes}
-Mostrar este prompt ao vivo e deixar a IA gerar. Depois comentar o resultado: o que está bem, o que precisaria de verificação (especialmente números epidemiológicos), o que está genérico de mais.
+Mostrar este prompt ao vivo e deixar a IA gerar. Depois comentar o resultado: o que está bem, o que precisaria de verificação (especialmente números epidemiológicos e valores de VO₂), o que está genérico de mais.
 :::
 
 ---
@@ -701,7 +701,7 @@ Introdução a LaTeX *(colega)*:
 
 ## Questões? {background-color="#2C3E50"}
 
-**tiago.jacinto@med.up.pt**
+**tiagojacinto@med.up.pt** · [tiagojct.eu](https://tiagojct.eu)
 
 . . .
 
