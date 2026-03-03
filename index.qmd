@@ -379,8 +379,8 @@ O passo 4 é o mais importante e o mais frequentemente saltado. É também o que
 
 > Estou a escrever o racional de um protocolo SPIRIT para um ensaio clínico randomizado.
 >
-> **Cenário:** App móvel CardioFit de reabilitação cardíaca para sobreviventes de enfarte agudo do miocárdio (≥ 18 anos, FEVE ≥ 40%).  
-> **Comparador:** Reabilitação cardíaca convencional isolada.  
+> **Cenário:** App móvel CardioFit de reabilitação cardíaca para sobreviventes de enfarte agudo do miocárdio (≥ 18 anos, FEVE ≥ 40%).
+> **Comparador:** Reabilitação cardíaca convencional isolada.
 > **Outcome primário:** Capacidade funcional (VO₂ máx) às 12 semanas.
 >
 > Escreve um racional com ~350 palavras, estruturado em 4 parágrafos:
@@ -443,7 +443,7 @@ Um exercício útil: pedir a um colega de grupo que leia uma secção e aponte o
 
 ::: {.callout-note}
 ## Objectivo
-Rascunho de **todas as secções** no final — não precisa de ser perfeito.  
+Rascunho de **todas as secções** no final — não precisa de ser perfeito.
 Vão refinar nas próximas aulas.
 :::
 
@@ -550,13 +550,9 @@ Converter o exemplo CardioFit em conjunto antes de vocês fazerem.
 
 ::: {.callout-note}
 ## Modificar estilos
-Click direito no estilo → Modificar → alterar fonte, tamanho, cor.  
+Click direito no estilo → Modificar → alterar fonte, tamanho, cor.
 A alteração aplica-se automaticamente a **todos** os títulos com esse estilo.
 :::
-
-. . .
-
-*[DEMONSTRAÇÃO AO VIVO]*
 
 ---
 
@@ -577,10 +573,6 @@ A alteração aplica-se automaticamente a **todos** os títulos com esse estilo.
 **Actualizar depois de editar:**
 
 > Click direito no índice → "Actualizar Campo" → "Actualizar índice inteiro"
-
-. . .
-
-*[DEMONSTRAÇÃO AO VIVO]*
 
 ---
 
@@ -652,16 +644,16 @@ O ficheiro .bib é o elo de ligação entre o Zotero e qualquer ferramenta de es
 ::: {.callout-important}
 ## Instalar antes do TP4
 
-**1. Instalar Zotero**  
+**1. Instalar Zotero**
 [zotero.org/download](https://www.zotero.org/download/)
 
-**2. Instalar Better BibTeX**  
-a. Descarregar `.xpi` em [github.com/retorquere/zotero-better-bibtex/releases/latest](https://github.com/retorquere/zotero-better-bibtex/releases/latest)  
-*(Firefox: click direito → "Guardar link como...")*  
-b. Zotero → Tools → Plugins → engrenagem → Install Plugin From File  
+**2. Instalar Better BibTeX**
+a. Descarregar `.xpi` em [github.com/retorquere/zotero-better-bibtex/releases/latest](https://github.com/retorquere/zotero-better-bibtex/releases/latest)
+*(Firefox: click direito → "Guardar link como...")*
+b. Zotero → Tools → Plugins → engrenagem → Install Plugin From File
 c. Seleccionar o `.xpi` → Install → Reiniciar Zotero
 
-**3. Verificar**  
+**3. Verificar**
 Zotero → Preferences → separador "Better BibTeX" deve existir.
 :::
 

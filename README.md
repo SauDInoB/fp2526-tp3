@@ -1,7 +1,7 @@
 # TP3 — Processamento de Texto Avançado
 
 **Disciplina:** Ferramentas de Produtividade · SauD InoB · FMUP  
-**Aula:** TP3 · 3 de Março de 2026
+**Aula:** TP3 · 3, 5 e 6 de Março de 2026
 
 ---
 
@@ -25,7 +25,7 @@ A apresentação da aula está disponível em:
 
 ---
 
-## Estrutura da Aula (2h, sem pausa)
+## Estrutura da Aula
 
 | Bloco | Duração | Conteúdo |
 |-------|---------|----------|
