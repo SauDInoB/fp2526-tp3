@@ -1,7 +1,7 @@
 ---
 title: "Processamento de Texto Avançado"
 subtitle: "TP3 · Protocolo de Ensaio Clínico"
-date: "3 de Março de 2026"
+date: "2026-03-03"
 format:
   revealjs:
     theme: simple
@@ -17,6 +17,14 @@ format:
 ---
 
 # Bem-vindos {background-color="#2C3E50"}
+
+## Materiais
+
+Todos os materiais estão disponíveis em:
+
+**[saudinob.github.io/fp2526-tp3](https://saudinob.github.io/fp2526-tp3)**
+
+---
 
 ## Agenda
 
@@ -74,8 +82,6 @@ TP3-GrupoX/
 Estrutura simples de propósito. Não usar nomes como "versão final" ou "definitivo" — usar numeração (v1, v2) para poder rastrear evolução.
 :::
 
----
-
 # Cenários e Grupos {background-color="#2C3E50"}
 
 ## Atribuição de Cenários
@@ -120,11 +126,7 @@ Estrutura simples de propósito. Não usar nomes como "versão final" ou "defini
 Confirmar em voz alta cada grupo com o cenário. Dar 1 minuto para os grupos se reunirem e confirmarem que têm o ficheiro `cenarios.md` disponível no repositório.
 :::
 
----
-
 # Markdown Avançado {background-color="#2C3E50"}
-
----
 
 ## Revisão Rápida
 
@@ -205,9 +207,41 @@ date: "2026-03-03"
 Abrir o ficheiro no ecrã e navegar pelas secções rapidamente — não ler, apenas mostrar a estrutura e os comentários. "Está tudo aqui, sigam os comentários."
 :::
 
----
-
 # Protocolo SPIRIT {background-color="#2C3E50"}
+
+## CONSORT vs. SPIRIT
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**CONSORT**
+
+- *Consolidated Standards of Reporting Trials*
+- Para **relatar** resultados de um RCT já concluído
+- Checklist de 25 itens para artigo de resultados
+- Garante transparência no relato
+:::
+
+::: {.column width="50%"}
+**SPIRIT**
+
+- *Standard Protocol Items: Recommendations for Interventional Trials*
+- Para **planear e registar** um RCT antes de começar
+- Checklist de 33 itens para protocolo
+- Garante rigor no planeamento
+
+[Chan et al., *BMJ* 2024](https://www.bmj.com/content/389/bmj-2024-081477)
+:::
+
+::::
+
+. . .
+
+> CONSORT = o que aconteceu. SPIRIT = o que vai acontecer.
+
+::: {.notes}
+A distinção é importante: os estudantes vão escrever um protocolo SPIRIT — um documento que existe ANTES de qualquer dado ser recolhido. CONSORT é o que usarão quando (e se) publicarem os resultados. O link aponta para a versão actualizada de 2024 do SPIRIT.
+:::
 
 ---
 
@@ -286,11 +320,7 @@ Cada critério deve ser **verificável objectivamente.**
 ❌ "Adultos com asma" → ✅ "18–65 anos, asma moderada segundo GINA"
 :::
 
----
-
 # Usar IA no Protocolo {background-color="#2C3E50"}
-
----
 
 ## Porquê Usar IA?
 
@@ -384,8 +414,6 @@ Depois de gerar, verificar **sempre:**
 Um exercício útil: pedir a um colega de grupo que leia uma secção e aponte o que não entende ou parece vago. Se não conseguem defender o que está escrito, é sinal de que precisam de rever.
 :::
 
----
-
 # Trabalho Prático {background-color="#2C3E50"}
 
 **35 minutos de redação**
@@ -395,15 +423,20 @@ Um exercício útil: pedir a um colega de grupo que leia uma secção e aponte o
 ## Instruções
 
 1. Criar pasta `TP3-GrupoX/` no vosso computador
-2. Copiar `protocolo-template.md` para essa pasta → renomear para `protocolo-v1.md`
+2. Copiar `protocolo-template.md` → renomear para `protocolo-v1.md`
 3. Dividir secções pelo grupo (tabela do slide anterior)
 4. Para cada secção:
    a. Ler os comentários `<!-- -->` do template
    b. Preparar contexto e escrever prompt para a IA
    c. Gerar rascunho
-   d. Rever criticamente (verificar factos, especificidade, consistência)
+   d. Rever criticamente (factos, especificidade, consistência)
    e. Editar e integrar no ficheiro
-5. Aos 25 min: uma pessoa começa a compilar tudo num ficheiro único
+
+---
+
+## Instruções (cont.)
+
+5. Aos 25 min: uma pessoa começa a compilar num ficheiro único
 6. Guardar como `protocolo-v1.md`
 
 . . .
@@ -414,11 +447,7 @@ Rascunho de **todas as secções** no final — não precisa de ser perfeito.
 Vão refinar nas próximas aulas.
 :::
 
----
-
 # Conversão com Pandoc {background-color="#2C3E50"}
-
----
 
 ## O Que É o Pandoc?
 
@@ -473,8 +502,6 @@ Se pandoc.org/try estiver lento ou indisponível, a alternativa é dillinger.io 
 ## Demo ao vivo
 Converter o exemplo CardioFit em conjunto antes de vocês fazerem.
 :::
-
----
 
 # Formatação Profissional {background-color="#2C3E50"}
 
@@ -567,11 +594,7 @@ Antes de terminar:
 - [ ] Documento guardado como `protocolo-v1.docx`
 - [ ] Cabeçalhos/rodapés *(opcional — podem fazer em casa)*
 
----
-
 # Referências Bibliográficas {background-color="#2C3E50"}
-
----
 
 ## Porquê Gerir Referências?
 
