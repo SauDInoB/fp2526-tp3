@@ -112,7 +112,7 @@ Estrutura simples de propósito. Não usar nomes como "versão final" ou "defini
 |-------|-----------|
 | **G_4** · RespiRA | João Paulo Cardoso, Gonçalo Cunha, Tiago Ferreira, Tiago Sousa |
 | **G_5** · MindMove | Inês Assunção, Inês Formoso, Maria João Roldão, Maria João Roso |
-| **G_6** · GlucoCheck | Rosarinho Barros, Mariana Dias, Luísa Moreira |
+| **G_6** · GlucoCheck | Rosarinho Barros, Mariana Dias, Luísa Moreira, Francisca Teixeira |
 
 ---
 
